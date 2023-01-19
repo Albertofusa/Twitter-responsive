@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --blue: #1a8cd8;
+  --black: #0f1419;
+  --white: #ffffff;
+  --gray-input: #eff1f1;
+  --red-me: #bf360c;
+  /* extras */
+  --font-size: 62.5%;
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* reseteos */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  border: 0;
+  outline: 0;
+}
+
+input {
+  border: 0;
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+}
