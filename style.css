@@ -11,8 +11,10 @@
   --white: #ffffff;
   --gray-input: #eff1f1;
   --red-me: #bf360c;
+  --gray: #808080;
   /* extras */
   --font-size: 62.5%;
+  --font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -85,7 +87,6 @@ a {
 
 .container {
   width: 100%;
-  height: 100vh;
   background-color: var(--white);
 }
 
@@ -107,7 +108,7 @@ a {
   font-size: 1.6rem;
   text-align: center;
   font-weight: 600;
-  color: gray;
+  color: var(--gray);
   cursor: pointer;
   width: 50%;
   border-bottom: 2px solid var(--gray-input);
@@ -134,4 +135,93 @@ a {
 
 .tabs input[type="radio"]:checked + label + .tabs__content {
   display: block;
+}
+
+/* tweets */
+
+.tweet--1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--white);
+  padding: 2rem 0;
+}
+
+.tweet__content__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0 0 0 4rem;
+}
+
+.icon__comment {
+  width: 20px;
+}
+
+.tweet--copy--header {
+  color: var(--gray);
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+.tweet__content__copy {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+
+.avatar__twitter {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.tweet__content__box {
+  width: 100%;
+}
+
+.tweet--content--name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.tweet--name {
+  font-family: var(--font-family);
+  font-size: 14px;
+}
+
+.menu {
+  width: 20px;
+}
+
+.tweet__copy {
+  font-family: var(--font-family);
+  font-weight: 500;
+  color: var(--black);
+  font-size: 12px;
+  margin-bottom: 1rem;
+}
+
+.tweet__icons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tweet__icons__box {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.icon {
+  width: 17px;
 }
