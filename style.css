@@ -146,6 +146,7 @@ a {
   gap: 2rem;
   background-color: var(--white);
   padding: 2rem 0;
+  border-bottom: 2px solid var(--gray-input);
 }
 
 .tweet__content__header {
@@ -167,13 +168,13 @@ a {
   font-size: 12px;
 }
 
-.tweet__content__copy {
+.tweet__content__information {
   display: flex;
   gap: 2rem;
   width: 100%;
 }
 
-.avatar__twitter {
+.avatar {
   height: 60px;
   width: 60px;
   border-radius: 100%;
@@ -224,4 +225,38 @@ a {
 
 .icon {
   width: 17px;
+}
+
+/* tweet--2 */
+
+.tweet--2 {
+  width: 100%;
+  background-color: var(--white);
+  padding: 2rem 0;
+  border-bottom: 2px solid var(--gray-input);
+}
+
+.content__tweet--2 {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
+.links {
+  color: var(--blue);
+}
+
+.tweet__button__box {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.tweet__button {
+  background-color: var(--black);
+  color: var(--white);
+  font: 1.4rem;
+  padding: 1rem 9rem;
+  border-radius: 40px;
+  cursor: pointer;
 }

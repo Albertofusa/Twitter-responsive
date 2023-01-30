@@ -42,10 +42,10 @@
         <input type="radio" name="radio" id="radio1" checked="checked" />
         <label for="radio1">For me</label>
         <div class="tabs__content">
-          <div class="helper">
-            <!-- tweets--1 -->
-            <div class="tweet--1">
-              <div>
+          <!-- tweets--1 -->
+          <div class="tweet--1">
+            <div>
+              <div class="helper">
                 <div class="tweet__content__header">
                   <img
                     class="icon__comment"
@@ -56,9 +56,9 @@
                     <p class="tweet--copy--header">Mr .Tweet repelied</p>
                   </div>
                 </div>
-                <div class="tweet__content__copy">
+                <div class="tweet__content__information">
                   <img
-                    class="avatar__twitter"
+                    class="avatar"
                     src="/img/avatar-richard.png"
                     alt="avatar"
                   />
@@ -105,25 +105,28 @@
                   </div>
                 </div>
               </div>
-              <!-- retweet -->
-              <div>
-                <div class="box__twiter">
-                  <div class="tweet__content__copy">
-                    <img
-                      class="avatar__twitter"
-                      src="/img/elonmusk.png"
-                      alt="avatar"
-                    />
+            </div>
+            <!-- retweet -->
+            <div>
+              <div class="helper">
+                <div>
+                  <div class="tweet__content__information">
+                    <img class="avatar" src="/img/elonmusk.png" alt="avatar" />
                     <div class="tweet__content__box">
                       <div class="tweet--content--name">
-                        <h3>Mr Tweet @Elonmusk</h3>
+                        <h3 class="tweet--name">
+                          Mr Tweet <span style="color: gray">@Elonmusk</span>
+                        </h3>
                         <a href="#"
                           ><img class="menu" src="/img/puntos.png" alt="menu"
                         /></a>
                       </div>
-                      <div class="tweet__copy">
-                        <p>Repleying to @mauken16</p>
-                        <p>iknow</p>
+                      <div>
+                        <p class="tweet__copy">
+                          Repleying to
+                          <span style="color: gray">@mauken16</span>
+                        </p>
+                        <p class="tweet__copy">iknow</p>
                       </div>
                       <div class="tweet__icons">
                         <div class="tweet__icons__box">
@@ -156,16 +159,68 @@
                 </div>
               </div>
             </div>
-            <!-- tweets--2 -->
-            <div class="tweet--2"></div>
           </div>
+          <!-- tweets--2 -->
+          <div class="tweet--2">
+            <div class="helper">
+              <div class="content__tweet--2">
+                <img class="avatar" src="/img/avatar-ali.png" alt="avatar" />
+                <div class="tweet__content__box">
+                  <div class="tweet--content--name">
+                    <h3 class="tweet--name">
+                      Bitget <span style="color: gray">@bitgetglobal</span>
+                    </h3>
+                    <a href="#"
+                      ><img class="menu" src="/img/puntos.png" alt="menu"
+                    /></a>
+                  </div>
+                  <p class="tweet__copy">
+                    🐐 <a class="links" href="#">#MESSI</a> is now the 🔥
+                    <a class="links" href="#">#GOAT</a>. End of debate.
+                  </p>
+                  <p class="tweet__copy">
+                    ⚽ Troughout his career, #MESSI has exuded profesionalism &
+                    exceptionalism in football.
+                  </p>
+                  <p class="tweet__copy">
+                    ⚓ LIke <a class="links" href="#">#MESSI</a>, we at #Bitget
+                    are seadfast in the crypto world.
+                  </p>
+                  <p class="tweet__copy">
+                    💪 Lets achieve an era of greatness together
+                  </p>
+                  <p><a class="links" href="#">#BitgetxMessi</a></p>
+                  <div class="tweet__button__box">
+                    <button class="tweet__button">Follow</button>
+                  </div>
+                  <div class="tweet__icons">
+                    <div class="tweet__icons__box">
+                      <img class="icon" src="/img/comment.png" alt="comment" />
+                      <p>331</p>
+                    </div>
+                    <div class="tweet__icons__box">
+                      <img class="icon" src="/img/retweet.png" alt="retweet" />
+                      <p>106.k</p>
+                    </div>
+                    <div class="tweet__icons__box">
+                      <img class="icon" src="/img/love.png" alt="love" />
+                      <p>56.8k</p>
+                    </div>
+                    <div class="tweet__icons__box">
+                      <img class="icon" src="/img/share.png" alt="share" />
+                      <p>10k</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- tweet-3 -->
         </div>
         <!-- Following -->
         <input type="radio" name="radio" id="radio2" />
         <label for="radio2">Following</label>
-        <div class="tabs__content">
-          <div class="helper"></div>
-        </div>
+        <div class="tabs__content"></div>
       </section>
     </main>
   </body>
