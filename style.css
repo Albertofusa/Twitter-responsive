@@ -101,7 +101,6 @@ a {
 
 .tabs__content {
   width: 100%;
-  max-width: 500px;
 }
 
 .tabs input[type="radio"] {
@@ -301,4 +300,24 @@ a {
 
 .tweet__button__follower {
   padding: 1rem 2rem;
+}
+
+/* banner */
+
+.banner {
+  background-color: var(--white);
+  padding: 1rem 0;
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+}
+
+.banner__img {
+  width: 30px;
+}
+
+.banner__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
