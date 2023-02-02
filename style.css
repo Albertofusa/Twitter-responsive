@@ -46,6 +46,12 @@ a {
   text-decoration: none;
 }
 
+/* desktop */
+
+.banner__img__desktop {
+  display: none;
+}
+
 /* helper */
 
 .helper {
@@ -255,13 +261,15 @@ a {
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-align: center;
+  width: 100%;
 }
 
 .tweet__button {
+  width: 80%;
   background-color: var(--black);
   color: var(--white);
   font: 1.4rem;
-  padding: 1rem 9rem;
+  padding: 1rem 0;
   border-radius: 40px;
   cursor: pointer;
   font-weight: 900;
@@ -271,7 +279,6 @@ a {
 
 .tweet__image {
   width: 100%;
-  max-width: 400px;
   border-radius: 10px;
   margin-bottom: 2rem;
 }
@@ -299,6 +306,12 @@ a {
 }
 
 .tweet__button__follower {
+  background-color: var(--black);
+  color: var(--white);
+  font: 1.4rem;
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: 900;
   padding: 1rem 2rem;
 }
 
@@ -310,6 +323,7 @@ a {
   position: sticky;
   bottom: 0;
   z-index: 1;
+  width: 100%;
 }
 
 .banner__img {
@@ -320,4 +334,62 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+/* mediaqueries */
+
+@media (min-width: 500px) {
+  /* content */
+
+  .content__main__footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+  }
+
+  .container {
+    width: 85%;
+    height: 100vh;
+    background-color: var(--white);
+    overflow-y: scroll;
+  }
+
+  .banner {
+    background-color: var(--white);
+    width: 15%;
+    height: 100vh;
+    border-right: 1px solid var(--gray-input);
+  }
+
+  /* banner */
+
+  .banner__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 25px;
+    position: absolute;
+    right: 0;
+    padding: 0 2rem 0 0;
+  }
+
+  .banner__img__desktop {
+    display: block;
+  }
+
+  .banner__img__background {
+    background-color: var(--blue);
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+  }
+
+  .box__banner__img__desktop {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    padding: 0 2rem 0 0;
+  }
 }
