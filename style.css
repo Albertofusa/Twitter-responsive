@@ -48,7 +48,15 @@ a {
 
 /* desktop */
 
+.home__navbar {
+  display: none;
+}
+
 .banner__img__desktop {
+  display: none;
+}
+
+.content__ask {
   display: none;
 }
 
@@ -391,5 +399,75 @@ a {
     right: 0;
     bottom: 10px;
     padding: 0 2rem 0 0;
+  }
+
+  /* navbar */
+
+  .navbar__mobile {
+    display: none;
+  }
+
+  .home__navbar {
+    display: block;
+    color: var(--black);
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  /* content--ask */
+
+  .content__ask {
+    display: block;
+    width: 100%;
+    background-color: var(--white);
+    border-bottom: 2px solid var(--gray-input);
+    padding: 1rem 0;
+  }
+
+  .section__box__ask {
+    display: flex;
+    width: 100%;
+    gap: 3rem;
+  }
+
+  .ask__profile {
+    height: 45px;
+    width: 45px;
+    font-size: 3rem;
+  }
+
+  .section__box__ask__information {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .ask--copy {
+    color: var(--gray);
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .ask__content__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .ask__content__box__links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .ask__img {
+    width: 15px;
+  }
+
+  .ask__button {
+    padding: 1rem 2rem;
+    color: var(--white);
+    background-color: var(--blue);
+    border-radius: 50px;
+    opacity: 20rem;
   }
 }
