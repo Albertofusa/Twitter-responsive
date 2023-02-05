@@ -584,8 +584,7 @@ a {
   .button__banner {
     display: block;
     font-size: 1.8rem;
-    width: 100%;
-    padding: 1.5rem 0;
+    padding: 1.5rem 6rem;
     color: var(--white);
     background-color: var(--blue);
     border-radius: 40px;
