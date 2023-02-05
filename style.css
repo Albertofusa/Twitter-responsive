@@ -48,6 +48,10 @@ a {
 
 /* desktop */
 
+.section__main__desktop__form {
+  display: none;
+}
+
 .home__navbar {
   display: none;
 }
@@ -57,6 +61,18 @@ a {
 }
 
 .content__ask {
+  display: none;
+}
+
+.links__banner__desktop {
+  display: none;
+}
+
+.button__banner {
+  display: none;
+}
+
+.box__copy__banner__profile {
   display: none;
 }
 
@@ -74,6 +90,7 @@ a {
 .header {
   background-color: var(--white);
   padding: 2rem 0;
+  border-right: 2px solid var(--gray-input);
 }
 
 .navbar {
@@ -111,7 +128,7 @@ a {
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  max-width: 600px;
+  border-right: 2px solid var(--gray-input);
 }
 
 .tabs__content {
@@ -355,33 +372,41 @@ a {
     flex-direction: row-reverse;
     align-items: center;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .container {
-    width: 85%;
+    width: 80%;
     height: 100vh;
     background-color: var(--white);
-    overflow-y: scroll;
   }
 
   .banner {
     background-color: var(--white);
-    width: 15%;
+    width: 20%;
     height: 100vh;
     border-right: 1px solid var(--gray-input);
   }
 
   /* banner */
 
+  .section__baner__desktop {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    padding: 2rem 0;
+  }
+
   .banner__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    gap: 25px;
-    position: absolute;
-    right: 0;
-    padding: 0 2rem 0 0;
+    gap: 30px;
   }
 
   .banner__img__desktop {
@@ -393,13 +418,6 @@ a {
     height: 40px;
     width: 40px;
     border-radius: 100%;
-  }
-
-  .box__banner__img__desktop {
-    position: absolute;
-    right: 0;
-    bottom: 10px;
-    padding: 0 2rem 0 0;
   }
 
   /* navbar */
@@ -471,5 +489,130 @@ a {
     border-radius: 50px;
     opacity: 20rem;
     cursor: pointer;
+  }
+}
+
+@media (min-width: 1000px) {
+  .section__main__desktop {
+    width: 100%;
+    display: flex;
+  }
+
+  .section__main__desktop__tabs {
+    width: 65%;
+  }
+
+  .section__main__desktop__form {
+    display: block;
+    width: 35%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: var(--white);
+    padding: 2rem 0;
+  }
+
+  .form__search {
+    width: 100%;
+    padding: 1rem 5rem 1rem 1rem;
+    background-color: var(--gray-input);
+    border-radius: 40px;
+    margin-bottom: 2rem;
+  }
+
+  ::placeholder {
+    width: 100%;
+    color: var(--gray);
+    background-color: var(--gray-input);
+    font-size: 1.6rem;
+  }
+
+  .content__main__desktop__form {
+    background-color: var(--gray-input);
+    border-radius: 10px;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .title__desktop__form {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .box__desktop__form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  .copy__desktop__form {
+    color: var(--gray);
+    font-size: 1.2rem;
+  }
+
+  .copy__desktop__form__back {
+    color: var(--black);
+    font-size: 1.4rem;
+  }
+
+  .link__form {
+    font-size: 1.5rem;
+    color: var(--blue);
+  }
+}
+
+@media (min-width: 1200px) {
+  .links__desktop__banner__name {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .links__banner__desktop {
+    display: block;
+    color: var(--black);
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  .banner__img__desktop__background {
+    display: none;
+  }
+
+  .button__banner {
+    display: block;
+    font-size: 1.8rem;
+    width: 100%;
+    padding: 1.5rem 0;
+    color: var(--white);
+    background-color: var(--blue);
+    border-radius: 40px;
+    cursor: pointer;
+  }
+
+  .profile__display__box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .box__copy__banner__profile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .copy__banner__desktop__profile__black {
+    color: var(--black);
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+
+  .copy__banner__desktop__profile {
+    font-size: 1.2rem;
+    color: var(--gray);
   }
 }
