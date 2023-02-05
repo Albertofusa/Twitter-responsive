@@ -91,6 +91,7 @@ a {
   background-color: var(--white);
   padding: 2rem 0;
   border-right: 2px solid var(--gray-input);
+  border-left: 2px solid var(--gray-input);
 }
 
 .navbar {
@@ -129,6 +130,7 @@ a {
   align-items: center;
   width: 100%;
   border-right: 2px solid var(--gray-input);
+  border-left: 2px solid var(--gray-input);
 }
 
 .tabs__content {
@@ -386,7 +388,6 @@ a {
     background-color: var(--white);
     width: 20%;
     height: 100vh;
-    border-right: 1px solid var(--gray-input);
   }
 
   /* banner */
@@ -510,12 +511,12 @@ a {
     top: 0;
     z-index: 1;
     background-color: var(--white);
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
 
   .form__search {
     width: 100%;
-    padding: 2rem 5rem 2rem 1rem;
+    padding: 1.5rem 5rem 1.5rem 1rem;
     background-color: var(--gray-input);
     border-radius: 40px;
     margin-bottom: 2rem;
