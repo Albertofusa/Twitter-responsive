@@ -76,6 +76,10 @@ a {
   display: none;
 }
 
+.content__links__desktop {
+  display: none;
+}
+
 /* helper */
 
 .helper {
@@ -614,5 +618,17 @@ a {
   .copy__banner__desktop__profile {
     font-size: 1.2rem;
     color: var(--gray);
+  }
+
+  .content__links__desktop {
+    display: block;
+    margin-top: 2rem;
+    border-top: 2px solid var(--gray-input);
+    padding: 2rem 1rem;
+  }
+
+  .links__desktop {
+    color: var(--gray);
+    font-size: 1.3rem;
   }
 }
