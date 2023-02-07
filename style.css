@@ -199,6 +199,11 @@ a {
   border-bottom: 2px solid var(--gray-input);
 }
 
+.tweet__and__retweet:hover {
+  background-color: var(--gray-input);
+  cursor: pointer;
+}
+
 .tweet__content__header {
   display: flex;
   align-items: center;
@@ -274,6 +279,10 @@ a {
   gap: 1.5rem;
 }
 
+.tweet__icon__coment:hover {
+  background-color: var(--blue);
+}
+
 .icon {
   width: 17px;
 }
@@ -285,6 +294,11 @@ a {
   background-color: var(--white);
   padding: 2rem 0;
   border-bottom: 2px solid var(--gray-input);
+}
+
+.tweet__clasic:hover {
+  background-color: var(--gray-input);
+  cursor: pointer;
 }
 
 .content__tweet__section {
@@ -377,6 +391,11 @@ a {
   justify-content: space-between;
 }
 
+i {
+  font-size: 30px;
+  color: var(--black);
+}
+
 /* mediaqueries */
 
 @media (min-width: 500px) {
@@ -404,6 +423,11 @@ a {
   }
 
   /* banner */
+
+  .banner__desktop {
+    display: flex;
+    justify-content:right
+  }
 
   .section__baner__desktop {
     height: 100%;
