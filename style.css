@@ -592,7 +592,7 @@ i {
   ::placeholder {
     width: 100%;
     color: var(--gray);
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .content__main__desktop__form {
