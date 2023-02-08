@@ -634,8 +634,12 @@ i {
     padding-bottom: 2rem;
   }
 
+  .elipsis {
+    font-size: 15px;
+  }
+
   .box__desktop__form:hover {
-    background-color: antiquewhite;
+    background-color: gainsboro;
     cursor: pointer;
   }
 
@@ -655,7 +659,7 @@ i {
   }
 
   .link__form__show:hover {
-    background-color: antiquewhite;
+    background-color: gainsboro;
   }
 }
 
