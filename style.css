@@ -279,12 +279,36 @@ a {
   gap: 1.5rem;
 }
 
-.tweet__icon__coment:hover {
-  background-color: var(--blue);
+.icon {
+  width: 20px;
 }
 
 .icon {
-  width: 17px;
+  font-size: 18px;
+}
+
+.comment__box:hover {
+  color: var(--blue);
+}
+
+.comment:hover {
+  color: var(--blue);
+}
+
+.retweet__box:hover {
+  color: green;
+}
+
+.retweet:hover {
+  color: green;
+}
+
+.love__box:hover {
+  color: palevioletred;
+}
+
+.love:hover {
+  color: palevioletred;
 }
 
 /* tweet */
@@ -407,7 +431,7 @@ i {
 @media (min-width: 500px) {
   /* content */
 
-  .content__main__footer {
+  .content {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -433,6 +457,7 @@ i {
   .banner__desktop {
     display: flex;
     justify-content: right;
+    width: 100%;
   }
 
   .section__baner__desktop {
@@ -592,7 +617,7 @@ i {
   ::placeholder {
     width: 100%;
     color: var(--gray);
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   .content__main__desktop__form {
