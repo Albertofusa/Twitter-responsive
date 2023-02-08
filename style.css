@@ -254,8 +254,8 @@ a {
   font-weight: 600;
 }
 
-.points {
-  width: 20px;
+.elipsis {
+  font-size: 15px;
 }
 
 .tweet__copy {
@@ -685,7 +685,8 @@ i {
   .button__banner {
     display: block;
     font-size: 1.8rem;
-    padding: 1.5rem 6.5rem;
+    width: 100%;
+    padding: 1.2rem 0;
     color: var(--white);
     background-color: var(--blue);
     border-radius: 40px;
@@ -702,7 +703,7 @@ i {
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .copy__banner__desktop__profile__black {
