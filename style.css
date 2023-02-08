@@ -276,11 +276,11 @@ a {
 .tweet__icons__box {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .icon {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .comment__box:hover {
