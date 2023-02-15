@@ -35,7 +35,7 @@
 
 .banner__gray__profile {
   background-color: var(--div);
-  height: 120px;
+  height: 130px;
   width: 100%;
 }
 
@@ -112,9 +112,52 @@
   font-size: 1.4rem;
   color: var(--gray);
   margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 .copy__number__follower__profile {
   color: var(--black);
   font-weight: 900;
+}
+
+/* tabs */
+
+.tabs__profile {
+  width: 100%;
+  background-color: var(--white);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabs__profile input[type="radio"] {
+  display: none;
+}
+
+.tabs__profile label {
+  width: 25%;
+  padding: 2rem 0;
+  color: var(--gray);
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-bottom: 2px solid var(--gray-input);
+}
+
+.tabs__profile label:hover {
+  background-color: var(--gray-input);
+}
+
+.tabs__profile input:checked + label {
+  color: var(--black);
+  border-bottom: 2px solid var(--blue);
+}
+
+.tabs__profile .content__tabs__profile {
+  width: 100%;
+  order: 1;
+  display: none;
+}
+
+.tabs__profile input[type="radio"]:checked + label + .content__tabs__profile {
+  display: block;
 }
