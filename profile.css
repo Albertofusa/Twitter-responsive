@@ -1,3 +1,10 @@
+.container__profile {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* navbar */
 
 .header__profile {
@@ -214,5 +221,50 @@
 @media (min-width: 500px) {
   .section__banner__mobile__profile {
     display: none;
+  }
+
+  /* contenedores */
+
+  .section__banner__desktop__profile {
+    width: 20%;
+  }
+
+  .section__main__profile {
+    width: 80%;
+  }
+
+  /* banner */
+
+  .logo__twiter__profile {
+    width: 30px;
+  }
+
+  .content__links__profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .box__banner__profile__desktop {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .box__banner__profile__desktop:hover {
+    background-color: var(--gray-input);
+    border-radius: 10px;
+  }
+
+  .icon__profile__desktop {
+    font-size: 25px;
+  }
+
+  .copy__link__profile {
+    font-size: 2rem;
+    color: var(--black);
+    font-weight: 300;
   }
 }
