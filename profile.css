@@ -55,6 +55,7 @@
 
 .content__profile__profile {
   position: relative;
+  cursor: pointer;
 }
 
 .profile___profile {
@@ -141,6 +142,7 @@
   font-size: 1.2rem;
   font-weight: 600;
   border-bottom: 2px solid var(--gray-input);
+  cursor: pointer;
 }
 
 .tabs__profile label:hover {
@@ -160,4 +162,57 @@
 
 .tabs__profile input[type="radio"]:checked + label + .content__tabs__profile {
   display: block;
+}
+
+/* tweets */
+
+.box__tabs__profile {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: var(--white);
+  padding: 2rem 0;
+}
+
+.image__profile {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.subtitle__tabs__profile {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+}
+
+.copy__tabs__profile {
+  font-size: 1.7rem;
+  color: var(--gray);
+}
+
+/* section--nav--mobile */
+
+.section__banner__mobile__profile {
+  width: 100%;
+  background-color: var(--white);
+  position: sticky;
+  bottom: 0;
+  padding: 1rem 0;
+}
+
+.box__banner__mobile__profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link__mobile__profile:hover {
+  background-color: var(--gray-input);
+  border-radius: 10px;
+}
+
+@media (min-width: 500px) {
+  .section__banner__mobile__profile {
+    display: none;
+  }
 }
