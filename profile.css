@@ -38,7 +38,7 @@
 }
 
 .arrow__profile {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .title__navbar__profile {
@@ -402,6 +402,7 @@
 
   .box__trendig__follower:hover {
     background-color: gainsboro;
+    cursor: pointer;
   }
 
   .box__margin {
