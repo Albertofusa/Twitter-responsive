@@ -56,7 +56,7 @@
 
 .banner__gray__profile {
   background-color: var(--div);
-  height: 130px;
+  height: 140px;
   width: 100%;
 }
 
@@ -137,6 +137,14 @@
   color: var(--gray);
   padding-top: 1rem;
   padding-bottom: 3rem;
+}
+
+.link__copy__number__profile {
+  color: var(--gray);
+}
+
+.link__copy__number__profile:hover {
+  text-decoration: underline;
 }
 
 .copy__number__follower__profile {
@@ -432,15 +440,6 @@
 /* mediaquerie--1200px */
 
 @media (min-width: 1200px) {
-  .section__banner__desktop__profile {
-    display: flex;
-    justify-content: left;
-    align-items: flex-start;
-    width: 20%;
-    padding: 1rem 0;
-    height: 100vh;
-  }
-
   .box__copy__banner__profile {
     display: block;
   }
