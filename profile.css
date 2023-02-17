@@ -248,13 +248,13 @@
   .section__banner__desktop__profile {
     display: flex;
     justify-content: right;
-    width: 15%;
+    width: 20%;
     padding: 1rem 0;
     height: 100vh;
   }
 
   .section__main__profile {
-    width: 85%;
+    width: 80%;
   }
 
   /* banner */
@@ -267,6 +267,10 @@
     height: 100%;
     padding: 0 1rem 2rem 1rem;
     position: fixed;
+  }
+
+  .box__content__profile {
+    width: 100%;
   }
 
   .box__banner__profile {
@@ -283,11 +287,7 @@
   }
 
   .icon__banner__profile {
-    font-size: 30px;
-  }
-
-  .icon__banner__profile__extent {
-    font-size: 35px;
+    font-size: 38px;
   }
 
   .icon__hashtag__profile {
@@ -304,6 +304,29 @@
     padding: 0.5rem;
     color: var(--white);
     font-weight: 300;
+  }
+
+  .content__icon {
+    display: none;
+  }
+
+  .content__icon__me {
+    display: none;
+  }
+
+  .write__profile {
+    background-color: var(--blue);
+    color: var(--white);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .icon__write {
+    font-size: 2rem;
+    color: var(--white);
   }
 }
 
@@ -412,7 +435,8 @@
   .section__banner__desktop__profile {
     display: flex;
     justify-content: left;
-    width: 15%;
+    align-items: flex-start;
+    width: 20%;
     padding: 1rem 0;
     height: 100vh;
   }
@@ -429,7 +453,7 @@
   }
 
   .copy__banner__profile {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--black);
   }
 
@@ -438,6 +462,48 @@
   }
 
   .icon__glass__profile {
+    display: none;
+  }
+
+  .button__banner__profile {
+    background-color: var(--blue);
+    padding: 1.5rem;
+    width: 100%;
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 900;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+
+  .box__profile__me {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .box__profile__me:hover {
+    background-color: var(--gray-input);
+    border-radius: 20px;
+  }
+
+  .profile__me {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .copy__profile__banner {
+    font-size: 1.4rem;
+    font-weight: 900;
+  }
+
+  .content__icon__me {
+    display: block;
+  }
+
+  .box__icon__write {
     display: none;
   }
 }
